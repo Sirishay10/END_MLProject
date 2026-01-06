@@ -1,0 +1,38 @@
+End-to-End ML Project by KN:
+1)Setup the Project with Github
+2)Data Ingestion
+3)Data Transformation
+4)Model Trainer
+5)Model Evaluation
+6)Model Deployment
+7)CI/CD Pipelines-Github Actions
+8)Deployment-AWS
+
+
+
+Day-1 Notes:
+-->Setup the Github for repository so that if working in team so others can also modify or add 
+   (a)Create New environment
+   (b)Understand the importance of setup.py
+   (c)Create requirements.txt
+
+   Step1: Open Github->go to repositories->new->Give name->keep it public/private->Create
+   Step2:Copy the project path in local folder and open in anaconda prompt and then type code .,vs code will open
+-->Create an environment and activate it using conda activate <name>/
+-->Clone the repositiry and sync with github means the repository will be copied to local system.Type git init in terminal
+-->Create a README file on left panel. This is nothing but description of your project.Then add this file to github repository.the type git commit -m "first commit" to commit the action.
+-->You can type git status to check what is happening with respect to the commit.
+-->We need to push the file github now before that type git branch -M main,the git remote add origin https://github.com/Sirishay10/END_MLProject.git so it is in sync with gitub repository and then type git remote -v to see if the file was synced.Now finally,to push the file,first google git global config with your username and password,then type use git push -u origin main command
+
+Note:If upon typing "git push -u origin main command" ,it throws some authentication errror then go to control panel,credential manager->windows credentials->remove any credentials with the incorrect github username
+
+-->Then create a new file ".gitignore" on readme page,then choose type of gitignore file as python->commit the changes(reason for creating this file to remove some of the files that need not be committed in github)
+-->In order to ensure everything is updated from my side as well,type git pull and the file created above should be visible
+-->Now create a new file setup.py and requirements.txt.Setup.py will be created as a ml application which can be used as package which can be reused in others projects as well and even be able to deploy in PyPi from there anyone can do installation and use it which is why we use this file.
+-->Write the code for setup.py. This file will know how many packages are there by creating a folder called 'src'.Now under this src, in order to recognize this src as package ,we create a new file "__init__.py"
+-->Now add get_requirements() to setup.py file.
+-->Now run requirements.txt in terminal and we'll see ml package also gets installed on left side.
+-->Git add .--> if you get some error stating another git is running then go D:/ED_MLProject/.git/
+ in local folder and delete index.lock file
+
+
