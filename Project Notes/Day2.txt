@@ -1,0 +1,21 @@
+-->Under src,create a folder called components.Create __init__.py under components folder.We are creating this file because components will be created as package and can be exported or imported to some other file location.Data ingestion.py will be first component which is nothing but reading the data from database.Next component is data_transformation.py,next is model_trainer.py.Note components are the modules we are going to use in our project.
+-->Create another folder called Pipeline under src folder.Create train_pipeline and predict_pipeline under this folder.Create __init__.py as well so we can import this.
+-->Since the entire project implementation will be happening in src folder so we will create 3 files-logger.py,exception.py,utils.py(for functionality which will be used in common way in entire application)
+-->Now write exception in exception.py file.Import sys library which will have information about the exceptions getting controlled.
+-->Write the exception code.
+-->Now coming to logger.py file.This is to keep track of all the information regarding execution happened.Write the logger code in this file.
+-->Now test the logger and exception--
+code :if __name__=="__main__":
+      logging.info("Divide by zero")
+ type python src/logger.py
+
+-->test exception.py file and type python src/exception.py->this exception is not getting logged for some reason,will be told in coming sessions.
+Code:if __name__=="__main__":
+   ##
+   try:
+      a=1/10
+   except Exception as e:
+      logging.info("Divide by zero")
+      raise CustomException(e,sys)
+
+

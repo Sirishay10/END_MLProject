@@ -34,5 +34,15 @@ Note:If upon typing "git push -u origin main command" ,it throws some authentica
 -->Now run requirements.txt in terminal and we'll see ml package also gets installed on left side.
 -->Git add .--> if you get some error stating another git is running then go D:/ED_MLProject/.git/
  in local folder and delete index.lock file
+-->type git status to see what all files got added 
+-->type git commit -m "setup"-> this will commit the updates
+-->type git push -u origin main ->will push the entire files to github-->if your virtual environment also gets pushed the type git rm -r --cached venv command to remove that folder from github.Best practice is to have gitignore file to avoid this issue
+
+
+
+
+
+Note: -e . means install this package in editable mode.
+
 
 
