@@ -6,7 +6,7 @@
 -->Now coming to logger.py file.This is to keep track of all the information regarding execution happened.Write the logger code in this file.
 -->Now test the logger and exception--
 code :if __name__=="__main__":
-      logging.info("Divide by zero")
+      logging.info("Logging started")
  type python src/logger.py
 
 -->test exception.py file and type python src/exception.py->this exception is not getting logged for some reason,will be told in coming sessions.
@@ -17,5 +17,8 @@ Code:if __name__=="__main__":
    except Exception as e:
       logging.info("Divide by zero")
       raise CustomException(e,sys)
+-->Now type git add. to add the files with changes
+-->Type git commit -m "Logging and  exception" to commit and store in github
+--> Then push it to github-->git push -u origin main
 
 

@@ -18,5 +18,4 @@ logging.basicConfig(
 
 
 if __name__=="__main__":
-      logging.info("Divide by zero")
- 
+      logging.info("Logging started")
