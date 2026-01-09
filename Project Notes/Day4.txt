@@ -1,0 +1,12 @@
+Data Ingestion:
+-->Write the code for data ingestion.py
+-->DataIngestionConfig--if we need to give any input through data ingestion we do that through this class
+-->@dataclass->used to define your class variable unlike having to create init()
+-->Define the train,test and raw files path
+-->If you have functions in a class and not just variables then it is suggested to create the init constructor in the class.
+-->initiate_data_ingestion is written so if you need any data from database this will fetch the data.
+-->
+
+
+
+17:41
