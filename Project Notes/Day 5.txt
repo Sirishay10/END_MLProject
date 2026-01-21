@@ -1,0 +1,5 @@
+-->Main purpose of data transformation is to do feature engineering,convert data types etc.
+-->Column transformer is used to create pipeline like creating one hot encoding
+-->get_data_transformer_object function is created to create all my pikle files which will be responsible for converting categorical features etc.
+-->num_pipeline is create to handle missing values.
+-->Save preprocessing_obj pickle file
