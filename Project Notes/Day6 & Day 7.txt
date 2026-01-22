@@ -1,0 +1,2 @@
+-->Model trainer file-train different models and see the accuarcy
+-->If asked in the interview,which is your favorite model,tell them you dont have a favorite model instead ask them to ask you any model.
