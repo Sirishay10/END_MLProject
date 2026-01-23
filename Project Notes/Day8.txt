@@ -1,0 +1,5 @@
+-->We will now create web application with any pickle file.
+-->We will focus on prediction pipeline
+-->Import flask,request(to capture any post request will be able to be captured)
+-->Create prediction pipeline
+-->http://127.0.0.1:5000/
