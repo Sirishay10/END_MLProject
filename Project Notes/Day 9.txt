@@ -1,0 +1,6 @@
+-->Deployment AWS Beanstalk elastic
+-->We need to setup 2 important conifiguration whenever we are working with elastic beanstalk
+-->Elastic beanstalk is kind of an instance wherein you can probably deploy your entire application.
+-->Create a ebextensions outside of src folder and inside this folder,create python.config file.--this file is to tell elastic beanstalk as to what is the entry point to your application.
+-->Create application.py file as we dont have it currently for above code.So copy app.py content and create application.py file only for deployment purpose.
+-->Remove debug=True in app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=False) because for deployment we must remove it.   
