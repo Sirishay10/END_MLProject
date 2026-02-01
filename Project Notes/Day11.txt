@@ -1,0 +1,15 @@
+Deployment technique using AWS with ECR and EC2 instance
+
+-->Make sure to refer to docker notes
+
+-->Create a Dockerfile
+-->Build an image "studentPerformance-app"
+-->Create github folder-->workflows folder->main.yaml file
+The above step is very important as all deployment will happen because of this workflow.It has both CI/CD pipeline integrated
+->In Integration (CI) section, we can run all unit test cases to see if everything is working well or not.This is the first task with respect to job
+-->Next we build and push ECR image.ECR image is platform to store images which cannot  be made publicly available. Meaning,when we build an image in docker and push it to docker hub that image becomes publicly available meaning anyone can access it but when working in companies we cannot make our images public so for that we push the images to ECR repository post that deployment will be done through EC2 instance.
+-->Next step will be CD where we build and push ECR image and this will be run as self hosted.
+
+The above steps is summary of main.yaml file. This code for main.yaml is taken from github-->action-->workflows->new workflow->Deploy to ECS
+ 
+

@@ -1,0 +1,10 @@
+Deployment in azure
+-->LOgin to Azure portal
+-->create resource-->select web app
+-->Type in some subscription name,create resource group if not present,
+->>enter the name of instance,publish-code,select runtime stack,click on next -->open deployment tab and connect to github account->>fill in the rest of the details
+note since we are only learning use free F1 as app web service and not B1 else you will be charged 13$ for creating the web app.
+->Better to cretae the app service with F1 and the later open this app and on left panel select deployment center select github
+-->After this step,workflows folder will automatically be created in your github acoount.
+->>now to go to actins tab under github and manually run workflows
+--> then once done go to azure portal,copy the default domain url and your project should be work.
